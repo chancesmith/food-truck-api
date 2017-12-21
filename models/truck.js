@@ -22,7 +22,9 @@ const TruckSchema = new Schema({
   url: {
     type: String,
     required: [true, 'URL field is required']
-  }
+  },
+  created_at: Date,
+  updated_at: Date
 })
 
 const Truck = mongoose.model('trucks', TruckSchema)
